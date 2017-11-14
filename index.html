@@ -1,0 +1,1558 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AdminLTE 2 | Dashboard</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+  <!-- Bootstrap RTL -->
+  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap-rtl.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="plugins/ionicons/css/ionicons.min.css">
+  <!-- jvectormap -->
+  <link rel="stylesheet" href="plugins/jvectormap/jquery-jvectormap-1.2.2.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="plugins/dist/css/AdminLTE.min.css">
+  <!-- Theme style RTL -->
+  <link rel="stylesheet" href="plugins/dist/css/AdminLTE.rtl.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="plugins/dist/css/skins/_all-skins.min.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="plugins/dist/js/html5shiv.min.js"></script>
+  <script src="plugins/dist/js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  <header class="main-header">
+
+    <!-- Logo -->
+    <a href="index2.html" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b>A</b>LT</span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>Admin</b>LTE</span>
+    </a>
+
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+      <!-- Navbar Right Menu -->
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- Messages: style can be found in dropdown.less-->
+          <li class="dropdown messages-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-envelope-o"></i>
+              <span class="label label-success">4</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">شما 4 پیام دارید</li>
+              <li>
+                <!-- inner menu: contains the actual data -->
+                <ul class="menu">
+                  <li><!-- start message -->
+                    <a href="#">
+                      <div class="pull-right">
+                        <img src="plugins/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                      </div>
+                      <h4>
+                            تیم پشتیبانی
+                        <small><i class="fa fa-clock-o"></i> 5 دقیقه</small>
+                      </h4>
+                      <p>چرا یک قالب خوب نخرید؟</p>
+                    </a>
+                  </li>
+                  <!-- end message -->
+                  <li>
+                    <a href="#">
+                      <div class="pull-right">
+                        <img src="plugins/dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
+                      </div>
+                      <h4>
+                        تیم طراحی
+                        <small><i class="fa fa-clock-o"></i> 2 ساعت</small>
+                      </h4>
+                      <p>چرا یک قالب خوب نخرید؟</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="pull-right">
+                        <img src="plugins/dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
+                      </div>
+                      <h4>
+                        توسعه
+                        <small><i class="fa fa-clock-o"></i> امروز</small>
+                      </h4>
+                        <p>چرا یک قالب خوب نخرید؟</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="pull-right">
+                        <img src="plugins/dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
+                      </div>
+                      <h4>
+                        بخش فروش
+                        <small><i class="fa fa-clock-o"></i>دیروز</small>
+                      </h4>
+                      <p>چرا یک قالب خوب نخرید؟</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="pull-right">
+                        <img src="plugins/dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
+                      </div>
+                      <h4>
+                        بازبینی
+                        <small><i class="fa fa-clock-o"></i> 2 days</small>
+                      </h4>
+                        <p>چرا یک قالب خوب نخرید؟</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer"><a href="#">نمایشد همه پیام ها</a></li>
+            </ul>
+          </li>
+          <!-- Notifications: style can be found in dropdown.less -->
+          <li class="dropdown notifications-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-bell-o"></i>
+              <span class="label label-warning">10</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">شما 10 نوتیفیکیشن دارید</li>
+              <li>
+                <!-- inner menu: contains the actual data -->
+                <ul class="menu">
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-users text-aqua"></i>  5 عضوه تازه وارد
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-warning text-yellow"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolore doloribus eos esse excepturi facere, illum iusto minus nihil non pariatur perspiciatis porro possimus quasi sint suscipit voluptas, voluptatem, voluptates.
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-users text-red"></i>  5 عضوه تازه وارد
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-shopping-cart text-green"></i> 25 فروش اتفاق افتاد
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-user text-red"></i> شما نام کاربری خود را تغییر دادید
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer"><a href="#">دیدن همه</a></li>
+            </ul>
+          </li>
+          <!-- Tasks: style can be found in dropdown.less -->
+          <li class="dropdown tasks-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-flag-o"></i>
+              <span class="label label-danger">9</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">شما 9 کار باید انجام دهید</li>
+              <li>
+                <!-- inner menu: contains the actual data -->
+                <ul class="menu">
+                  <li><!-- Task item -->
+                    <a href="#">
+                      <h3>
+                        طراحی چند دکمه
+                        <small class="pull-left">20%</small>
+                      </h3>
+                      <div class="progress xs">
+                        <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                          <span class="sr-only">20% به پایان رسید</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <!-- end task item -->
+                  <li><!-- Task item -->
+                    <a href="#">
+                      <h3>
+                        طراحی یه قالب زیبا
+                        <small class="pull-left">40%</small>
+                      </h3>
+                      <div class="progress xs">
+                        <div class="progress-bar progress-bar-green" style="width: 40%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                          <span class="sr-only">40% به پایان رسید</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <!-- end task item -->
+                  <li><!-- Task item -->
+                    <a href="#">
+                      <h3>
+                        این کار ها را باید انجام دهم
+                        <small class="pull-left">60%</small>
+                      </h3>
+                      <div class="progress xs">
+                        <div class="progress-bar progress-bar-red" style="width: 60%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                          <span class="sr-only">60% به پایان رسید</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <!-- end task item -->
+                  <li><!-- Task item -->
+                    <a href="#">
+                      <h3>
+                        جابجایی زیبان
+                        <small class="pull-left">80%</small>
+                      </h3>
+                      <div class="progress xs">
+                        <div class="progress-bar progress-bar-yellow" style="width: 80%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                          <span class="sr-only">80% به پایان رسید</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <!-- end task item -->
+                </ul>
+              </li>
+              <li class="footer">
+                <a href="#">دیدن همه کار ها</a>
+              </li>
+            </ul>
+          </li>
+          <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="plugins/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <span class="hidden-xs">محمد رجبلو</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="plugins/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                <p>
+                  محمد رجبلو - طراحی و توسعه وب
+                  <small>20 اسفند 1373</small>
+                </p>
+              </li>
+              <!-- Menu Body -->
+              <li class="user-body">
+                <div class="row">
+                  <div class="col-xs-4 text-center">
+                    <a href="#">دنبال کنندان</a>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                    <a href="#">فروش</a>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                    <a href="#">دوستان</a>
+                  </div>
+                </div>
+                <!-- /.row -->
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="#" class="btn btn-default btn-flat">پروفایل</a>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-default btn-flat">خروج</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <!-- Control Sidebar Toggle Button -->
+          <li>
+            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar right-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar user panel -->
+      <div class="user-panel">
+        <div class="pull-left image">
+          <img src="plugins/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <p>محمد رجبلو</p>
+          <a href="#"><i class="fa fa-circle text-success"></i> آنلاین</a>
+        </div>
+      </div>
+      <!-- search form -->
+      <form action="#" method="get" class="sidebar-form">
+        <div class="input-group">
+          <input type="text" name="q" class="form-control" placeholder="جستجو ...">
+              <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                </button>
+              </span>
+        </div>
+      </form>
+      <!-- /.search form -->
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu">
+        <li class="header">منو اصلی</li>
+        <li class="active treeview">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>داشبورد</span>
+            <span class="pull-left-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="index.html"><i class="fa fa-circle-o"></i> داشبورد ورژن 1</a></li>
+            <li class="active"><a href="index2.html"><i class="fa fa-circle-o"></i> داشبورد ورژن 2</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-files-o"></i>
+            <span>آپشن لایه ها</span>
+            <span class="pull-left-container">
+              <span class="label label-primary pull-right">4</span>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> با منوی بالا</a></li>
+            <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> باکش</a></li>
+            <li><a href="pages/layout/fixed.html"><i class="fa fa-circle-o"></i> فیکس</a></li>
+            <li><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> ریزنده</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="pages/widgets.html">
+            <i class="fa fa-th"></i> <span>ابزارک ها</span>
+            <span class="pull-left-container">
+              <small class="label pull-right bg-green">جدید</small>
+            </span>
+          </a>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-pie-chart"></i>
+            <span>نمودار</span>
+            <span class="pull-left-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> چارت جی اس</a></li>
+            <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> میرور</a></li>
+            <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i> فلوت</a></li>
+            <li><a href="pages/charts/inline.html"><i class="fa fa-circle-o"></i> نمودار خطی</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-laptop"></i>
+            <span>رابط کاربری</span>
+            <span class="pull-left-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="pages/UI/general.html"><i class="fa fa-circle-o"></i> عمومی</a></li>
+            <li><a href="pages/UI/icons.html"><i class="fa fa-circle-o"></i> آیکن ها</a></li>
+            <li><a href="pages/UI/buttons.html"><i class="fa fa-circle-o"></i>  دکمه ها</a></li>
+            <li><a href="pages/UI/sliders.html"><i class="fa fa-circle-o"></i> اسلایدر</a></li>
+            <li><a href="pages/UI/timeline.html"><i class="fa fa-circle-o"></i> تایملاین</a></li>
+            <li><a href="pages/UI/modals.html"><i class="fa fa-circle-o"></i> مودولز</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-edit"></i> <span>فرم ها</span>
+            <span class="pull-left-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="pages/forms/general.html"><i class="fa fa-circle-o"></i> مهمولی</a></li>
+            <li><a href="pages/forms/advanced.html"><i class="fa fa-circle-o"></i> پیشرفته</a></li>
+            <li><a href="pages/forms/editors.html"><i class="fa fa-circle-o"></i> ویرایشگر ها</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-table"></i> <span>جدول</span>
+            <span class="pull-left-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="pages/tables/simple.html"><i class="fa fa-circle-o"></i> جدول ساده</a></li>
+            <li><a href="pages/tables/data.html"><i class="fa fa-circle-o"></i> جدول داده ای</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="pages/calendar.html">
+            <i class="fa fa-calendar"></i> <span>تقویم</span>
+            <span class="pull-left-container">
+              <small class="label pull-right bg-red">3</small>
+              <small class="label pull-right bg-blue">17</small>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="pages/mailbox/mailbox.html">
+            <i class="fa fa-envelope"></i> <span>ایمیل ها</span>
+            <span class="pull-left-container">
+              <small class="label pull-right bg-yellow">12</small>
+              <small class="label pull-right bg-green">16</small>
+              <small class="label pull-right bg-red">5</small>
+            </span>
+          </a>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-folder"></i> <span>نمونه ها</span>
+            <span class="pull-left-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="pages/examples/invoice.html"><i class="fa fa-circle-o"></i> فاکتور</a></li>
+            <li><a href="pages/examples/profile.html"><i class="fa fa-circle-o"></i> پروفایل</a></li>
+            <li><a href="pages/examples/login.html"><i class="fa fa-circle-o"></i> ورود</a></li>
+            <li><a href="pages/examples/register.html"><i class="fa fa-circle-o"></i> ثبت نام</a></li>
+            <li><a href="pages/examples/lockscreen.html"><i class="fa fa-circle-o"></i> قفل صفحه</a></li>
+            <li><a href="pages/examples/404.html"><i class="fa fa-circle-o"></i> ارور 404</a></li>
+            <li><a href="pages/examples/500.html"><i class="fa fa-circle-o"></i> ارور 500</a></li>
+            <li><a href="pages/examples/blank.html"><i class="fa fa-circle-o"></i> صقحه خالی</a></li>
+            <li><a href="pages/examples/pace.html"><i class="fa fa-circle-o"></i> صهحه سرعت</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-share"></i> <span>چند سطحی</span>
+            <span class="pull-left-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#"><i class="fa fa-circle-o"></i> سطح یک </a></li>
+            <li>
+              <a href="#"><i class="fa fa-circle-o"></i>  سطح یک
+                  <span class="pull-left-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="#"><i class="fa fa-circle-o"></i> سطح دو </a></li>
+                <li>
+                  <a href="#"><i class="fa fa-circle-o"></i>  سطح دو
+                    <span class="pull-left-container">
+                      <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                  </a>
+                  <ul class="treeview-menu">
+                    <li><a href="#"><i class="fa fa-circle-o"></i> سطح سه </a></li>
+                    <li><a href="#"><i class="fa fa-circle-o"></i> سطح سه </a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> سطح یک </a></li>
+          </ul>
+        </li>
+        <li><a href="documentation/index.html"><i class="fa fa-book"></i> <span>مستندات</span></a></li>
+        <li class="header">برچسب</li>
+        <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>مهم</span></a></li>
+        <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>اخطار</span></a></li>
+        <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>طلاعیه</span></a></li>
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        داشبورد
+        <small>ورژن 1.0</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> خانه</a></li>
+        <li class="active">داشبورد</li>
+      </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <!-- Info boxes -->
+      <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="info-box">
+            <span class="info-box-icon bg-aqua"><i class="ion ion-ios-gear-outline"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">مصرف پردازنده</span>
+              <span class="info-box-number">90<small>%</small></span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+        <!-- /.col -->
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="info-box">
+            <span class="info-box-icon bg-red"><i class="fa fa-google-plus"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">پسندیدن</span>
+              <span class="info-box-number">41,410</span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+        <!-- /.col -->
+
+        <!-- fix for small devices only -->
+        <div class="clearfix visible-sm-block"></div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="info-box">
+            <span class="info-box-icon bg-green"><i class="ion ion-ios-cart-outline"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">فروش</span>
+              <span class="info-box-number">760</span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+        <!-- /.col -->
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="info-box">
+            <span class="info-box-icon bg-yellow"><i class="ion ion-ios-people-outline"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">عضو جدید</span>
+              <span class="info-box-number">2,000</span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="box">
+            <div class="box-header with-border">
+              <h3 class="box-title">گذارش مصرف ماهانه</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-box-tool dropdown-toggle" data-toggle="dropdown">
+                    <i class="fa fa-wrench"></i></button>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">اقدام</a></li>
+                    <li><a href="#">عملیاتی دیگر</a></li>
+                    <li><a href="#">به چیز دیگه اینجاست</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">لینک جدا شده</a></li>
+                  </ul>
+                </div>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+              </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <div class="row">
+                <div class="col-md-8">
+                  <p class="text-center">
+                    <strong>فروش : 20 اسفند 1373 - 4 خرداد 1396</strong>
+                  </p>
+
+                  <div class="chart">
+                    <!-- Sales Chart Canvas -->
+                    <canvas id="salesChart" style="height: 180px;"></canvas>
+                  </div>
+                  <!-- /.chart-responsive -->
+                </div>
+                <!-- /.col -->
+                <div class="col-md-4">
+                  <p class="text-center">
+                    <strong>اتمام هدف</strong>
+                  </p>
+
+                  <div class="progress-group">
+                    <span class="progress-text">اضافه کردن محصول به نمودار</span>
+                    <span class="progress-number"><b>160</b>/200</span>
+
+                    <div class="progress sm">
+                      <div class="progress-bar progress-bar-aqua" style="width: 80%"></div>
+                    </div>
+                  </div>
+                  <!-- /.progress-group -->
+                  <div class="progress-group">
+                    <span class="progress-text">تکمیل فرآیند خرید</span>
+                    <span class="progress-number"><b>310</b>/400</span>
+
+                    <div class="progress sm">
+                      <div class="progress-bar progress-bar-red" style="width: 80%"></div>
+                    </div>
+                  </div>
+                  <!-- /.progress-group -->
+                  <div class="progress-group">
+                    <span class="progress-text">مشاهده صقحه ویژه</span>
+                    <span class="progress-number"><b>480</b>/800</span>
+
+                    <div class="progress sm">
+                      <div class="progress-bar progress-bar-green" style="width: 80%"></div>
+                    </div>
+                  </div>
+                  <!-- /.progress-group -->
+                  <div class="progress-group">
+                    <span class="progress-text">ارسال سوالات</span>
+                    <span class="progress-number"><b>250</b>/500</span>
+
+                    <div class="progress sm">
+                      <div class="progress-bar progress-bar-yellow" style="width: 80%"></div>
+                    </div>
+                  </div>
+                  <!-- /.progress-group -->
+                </div>
+                <!-- /.col -->
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- ./box-body -->
+            <div class="box-footer">
+              <div class="row">
+                <div class="col-sm-3 col-xs-6">
+                  <div class="description-block border-right">
+                    <span class="description-percentage text-green"><i class="fa fa-caret-up"></i> 17%</span>
+                    <h5 class="description-header">$35,210.43</h5>
+                    <span class="description-text">مجموع درامد</span>
+                  </div>
+                  <!-- /.description-block -->
+                </div>
+                <!-- /.col -->
+                <div class="col-sm-3 col-xs-6">
+                  <div class="description-block border-right">
+                    <span class="description-percentage text-yellow"><i class="fa fa-caret-left"></i> 0%</span>
+                    <h5 class="description-header">$10,390.90</h5>
+                    <span class="description-text">هزینه کل</span>
+                  </div>
+                  <!-- /.description-block -->
+                </div>
+                <!-- /.col -->
+                <div class="col-sm-3 col-xs-6">
+                  <div class="description-block border-right">
+                    <span class="description-percentage text-green"><i class="fa fa-caret-up"></i> 20%</span>
+                    <h5 class="description-header">$24,813.53</h5>
+                    <span class="description-text">مجموع سود</span>
+                  </div>
+                  <!-- /.description-block -->
+                </div>
+                <!-- /.col -->
+                <div class="col-sm-3 col-xs-6">
+                  <div class="description-block">
+                    <span class="description-percentage text-red"><i class="fa fa-caret-down"></i> 18%</span>
+                    <h5 class="description-header">1200</h5>
+                    <span class="description-text">هدف های انجام شده</span>
+                  </div>
+                  <!-- /.description-block -->
+                </div>
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- /.box-footer -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+
+      <!-- Main row -->
+      <div class="row">
+        <!-- Left col -->
+        <div class="col-md-8">
+          <!-- MAP & BOX PANE -->
+          <div class="box box-success">
+            <div class="box-header with-border">
+              <h3 class="box-title">گذارش بازدید ها</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+              </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body no-padding">
+              <div class="row">
+                <div class="col-md-9 col-sm-8">
+                  <div class="pad">
+                    <!-- Map will be created here -->
+                    <div id="world-map-markers" style="height: 325px;"></div>
+                  </div>
+                </div>
+                <!-- /.col -->
+                <div class="col-md-3 col-sm-4">
+                  <div class="pad box-pane-right bg-green" style="min-height: 280px">
+                    <div class="description-block margin-bottom">
+                      <div class="sparkbar pad" data-color="#fff">90,70,90,70,75,80,70</div>
+                      <h5 class="description-header">8390</h5>
+                      <span class="description-text">بازدید</span>
+                    </div>
+                    <!-- /.description-block -->
+                    <div class="description-block margin-bottom">
+                      <div class="sparkbar pad" data-color="#fff">90,50,90,70,61,83,63</div>
+                      <h5 class="description-header">30%</h5>
+                      <span class="description-text">معارفه ها</span>
+                    </div>
+                    <!-- /.description-block -->
+                    <div class="description-block">
+                      <div class="sparkbar pad" data-color="#fff">90,50,90,70,61,83,63</div>
+                      <h5 class="description-header">70%</h5>
+                      <span class="description-text">طبیعی</span>
+                    </div>
+                    <!-- /.description-block -->
+                  </div>
+                </div>
+                <!-- /.col -->
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+          <div class="row">
+            <div class="col-md-6">
+              <!-- DIRECT CHAT -->
+              <div class="box box-warning direct-chat direct-chat-warning">
+                <div class="box-header with-border">
+                  <h3 class="box-title">گفتگو مستقیم</h3>
+
+                  <div class="box-tools pull-right">
+                    <span data-toggle="tooltip" title="3 New Messages" class="badge bg-yellow">3</span>
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="Contacts" data-widget="chat-pane-toggle">
+                      <i class="fa fa-comments"></i></button>
+                    <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i>
+                    </button>
+                  </div>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                  <!-- Conversations are loaded here -->
+                  <div class="direct-chat-messages">
+                    <!-- Message. Default to the left -->
+                    <div class="direct-chat-msg">
+                      <div class="direct-chat-info clearfix">
+                        <span class="direct-chat-name pull-left">مهرداد تاری</span>
+                        <span class="direct-chat-timestamp pull-right">4 خرداد 20:00</span>
+                      </div>
+                      <!-- /.direct-chat-info -->
+                      <img class="direct-chat-img" src="plugins/dist/img/user1-128x128.jpg" alt="message user image"><!-- /.direct-chat-img -->
+                      <div class="direct-chat-text">
+                        واقعا این قالب رایگانه؟؟ مگه میشه؟ مگه داریم؟ آقا
+                      </div>
+                      <!-- /.direct-chat-text -->
+                    </div>
+                    <!-- /.direct-chat-msg -->
+
+                    <!-- Message to the right -->
+                    <div class="direct-chat-msg right">
+                      <div class="direct-chat-info clearfix">
+                        <span class="direct-chat-name pull-right">محمد رجبلو</span>
+                        <span class="direct-chat-timestamp pull-left">4 خرداد 20:00</span>
+                      </div>
+                      <!-- /.direct-chat-info -->
+                      <img class="direct-chat-img" src="plugins/dist/img/user3-128x128.jpg" alt="message user image"><!-- /.direct-chat-img -->
+                      <div class="direct-chat-text">
+                        بهتره باور کنی
+                      </div>
+                      <!-- /.direct-chat-text -->
+                    </div>
+                    <!-- /.direct-chat-msg -->
+
+                    <!-- Message. Default to the left -->
+                    <div class="direct-chat-msg">
+                      <div class="direct-chat-info clearfix">
+                        <span class="direct-chat-name pull-left">سینا سحر خیز</span>
+                          <span class="direct-chat-timestamp pull-right">4 خرداد 20:00</span>
+                      </div>
+                      <!-- /.direct-chat-info -->
+                      <img class="direct-chat-img" src="plugins/dist/img/user1-128x128.jpg" alt="message user image"><!-- /.direct-chat-img -->
+                      <div class="direct-chat-text">
+                       باهاش کار کن خیلی خوبه!
+                      </div>
+                      <!-- /.direct-chat-text -->
+                    </div>
+                    <!-- /.direct-chat-msg -->
+
+                    <!-- Message to the right -->
+                    <div class="direct-chat-msg right">
+                      <div class="direct-chat-info clearfix">
+                        <span class="direct-chat-name pull-right">مهندس فارابی</span>
+                        <span class="direct-chat-timestamp pull-left">4 خرداد 20:00</span>
+                      </div>
+                      <!-- /.direct-chat-info -->
+                      <img class="direct-chat-img" src="plugins/dist/img/user3-128x128.jpg" alt="message user image"><!-- /.direct-chat-img -->
+                      <div class="direct-chat-text">
+                        من خوشم میاد ازش
+                      </div>
+                      <!-- /.direct-chat-text -->
+                    </div>
+                    <!-- /.direct-chat-msg -->
+
+                  </div>
+                  <!--/.direct-chat-messages-->
+
+                  <!-- Contacts are loaded here -->
+                  <div class="direct-chat-contacts">
+                    <ul class="contacts-list">
+                      <li>
+                        <a href="#">
+                          <img class="contacts-list-img" src="plugins/dist/img/user1-128x128.jpg" alt="User Image">
+
+                          <div class="contacts-list-info">
+                                <span class="contacts-list-name">
+                                  محمر رجبلو
+                                  <small class="contacts-list-date pull-right">4/4/96</small>
+                                </span>
+                            <span class="contacts-list-msg">هوای لاره دا!!</span>
+                          </div>
+                          <!-- /.contacts-list-info -->
+                        </a>
+                      </li>
+                      <!-- End Contact Item -->
+                      <li>
+                        <a href="#">
+                          <img class="contacts-list-img" src="plugins/dist/img/user7-128x128.jpg" alt="User Image">
+
+                          <div class="contacts-list-info">
+                                <span class="contacts-list-name">
+                                  مهرداد تاری
+                                  <small class="contacts-list-date pull-right">1/4/96</small>
+                                </span>
+                            <span class="contacts-list-msg">مازندران مازندران</span>
+                          </div>
+                          <!-- /.contacts-list-info -->
+                        </a>
+                      </li>
+                      <!-- End Contact Item -->
+                      <li>
+                        <a href="#">
+                          <img class="contacts-list-img" src="plugins/dist/img/user3-128x128.jpg" alt="User Image">
+
+                          <div class="contacts-list-info">
+                                <span class="contacts-list-name">
+                                  سینا سحرخیز
+                                  <small class="contacts-list-date pull-right">5/9/95</small>
+                                </span>
+                            <span class="contacts-list-msg">تی بلا می سر</span>
+                          </div>
+                          <!-- /.contacts-list-info -->
+                        </a>
+                      </li>
+                      <!-- End Contact Item -->
+                      <li>
+                        <a href="#">
+                          <img class="contacts-list-img" src="plugins/dist/img/user5-128x128.jpg" alt="User Image">
+
+                          <div class="contacts-list-info">
+                                <span class="contacts-list-name">
+                                  اک.فارابی
+                                  <small class="contacts-list-date pull-right">2/10/2015</small>
+                                </span>
+                            <span class="contacts-list-msg">بفرما دم نوش !!</span>
+                          </div>
+                          <!-- /.contacts-list-info -->
+                        </a>
+                      </li>
+                      <!-- End Contact Item -->
+                      <li>
+                        <a href="#">
+                          <img class="contacts-list-img" src="plugins/dist/img/user6-128x128.jpg" alt="User Image">
+
+                          <div class="contacts-list-info">
+                                <span class="contacts-list-name">
+                                  محید عیسی لو
+                                  <small class="contacts-list-date pull-right">1/27/2015</small>
+                                </span>
+                            <span class="contacts-list-msg">مانیتورنگ عالی..!!</span>
+                          </div>
+                          <!-- /.contacts-list-info -->
+                        </a>
+                      </li>
+                      <!-- End Contact Item -->
+                      <li>
+                        <a href="#">
+                          <img class="contacts-list-img" src="plugins/dist/img/user8-128x128.jpg" alt="User Image">
+
+                          <div class="contacts-list-info">
+                                <span class="contacts-list-name">
+                                  محمد رحبلو
+                                  <small class="contacts-list-date pull-right">1/4/2015</small>
+                                </span>
+                            <span class="contacts-list-msg">چمستان هوا خاره!!</span>
+                          </div>
+                          <!-- /.contacts-list-info -->
+                        </a>
+                      </li>
+                      <!-- End Contact Item -->
+                    </ul>
+                    <!-- /.contatcts-list -->
+                  </div>
+                  <!-- /.direct-chat-pane -->
+                </div>
+                <!-- /.box-body -->
+                <div class="box-footer">
+                  <form action="#" method="post">
+                    <div class="input-group">
+                      <input type="text" name="message" placeholder="نوشتن پیام ..." class="form-control">
+                          <span class="input-group-btn">
+                            <button type="button" class="btn btn-warning btn-flat">ارسال</button>
+                          </span>
+                    </div>
+                  </form>
+                </div>
+                <!-- /.box-footer-->
+              </div>
+              <!--/.direct-chat -->
+            </div>
+            <!-- /.col -->
+
+            <div class="col-md-6">
+              <!-- USERS LIST -->
+              <div class="box box-danger">
+                <div class="box-header with-border">
+                  <h3 class="box-title">اخرین اعضا</h3>
+
+                  <div class="box-tools pull-right">
+                    <span class="label label-danger">8 عضو جدید</span>
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i>
+                    </button>
+                  </div>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body no-padding">
+                  <ul class="users-list clearfix">
+                    <li>
+                      <img src="plugins/dist/img/user1-128x128.jpg" alt="User Image">
+                      <a class="users-list-name" href="#">محمد</a>
+                      <span class="users-list-date">امروز</span>
+                    </li>
+                    <li>
+                      <img src="plugins/dist/img/user8-128x128.jpg" alt="User Image">
+                      <a class="users-list-name" href="#">مهرداد</a>
+                      <span class="users-list-date">دیروز</span>
+                    </li>
+                    <li>
+                      <img src="plugins/dist/img/user7-128x128.jpg" alt="User Image">
+                      <a class="users-list-name" href="#">سینا</a>
+                      <span class="users-list-date">4 خرداد</span>
+                    </li>
+                    <li>
+                      <img src="plugins/dist/img/user6-128x128.jpg" alt="User Image">
+                      <a class="users-list-name" href="#">فارابی</a>
+                      <span class="users-list-date">5 مهر</span>
+                    </li>
+                    <li>
+                      <img src="plugins/dist/img/user2-160x160.jpg" alt="User Image">
+                      <a class="users-list-name" href="#">مجید</a>
+                      <span class="users-list-date">6 اردیبهشت</span>
+                    </li>
+                    <li>
+                      <img src="plugins/dist/img/user5-128x128.jpg" alt="User Image">
+                      <a class="users-list-name" href="#">حسن</a>
+                      <span class="users-list-date">5 تیر</span>
+                    </li>
+                    <li>
+                      <img src="plugins/dist/img/user4-128x128.jpg" alt="User Image">
+                      <a class="users-list-name" href="#">نرگس</a>
+                      <span class="users-list-date">19 خرداد</span>
+                    </li>
+                    <li>
+                      <img src="plugins/dist/img/user3-128x128.jpg" alt="User Image">
+                      <a class="users-list-name" href="#">حسین</a>
+                      <span class="users-list-date">20 اسفند</span>
+                    </li>
+                  </ul>
+                  <!-- /.users-list -->
+                </div>
+                <!-- /.box-body -->
+                <div class="box-footer text-center">
+                  <a href="javascript:void(0)" class="uppercase">دیدن همه کاربر ها</a>
+                </div>
+                <!-- /.box-footer -->
+              </div>
+              <!--/.box -->
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+
+          <!-- TABLE: LATEST ORDERS -->
+          <div class="box box-info">
+            <div class="box-header with-border">
+              <h3 class="box-title">اخرین سفارش ها</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+              </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <div class="table-responsive">
+                <table class="table no-margin">
+                  <thead>
+                  <tr>
+                    <th>شماره سفارش</th>
+                    <th>ایتم</th>
+                    <th>وصعیت</th>
+                    <th>محبوبیت</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td><a href="pages/examples/invoice.html">OR9842</a></td>
+                    <td>هاست لینوکس</td>
+                    <td><span class="label label-success">رد شدن</span></td>
+                    <td>
+                      <div class="sparkbar" data-color="#00a65a" data-height="20">90,80,90,-70,61,-83,63</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a href="pages/examples/invoice.html">OR1848</a></td>
+                    <td>هاست ویندوز</td>
+                    <td><span class="label label-warning">معلق</span></td>
+                    <td>
+                      <div class="sparkbar" data-color="#f39c12" data-height="20">90,80,-90,70,61,-83,68</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a href="pages/examples/invoice.html">OR7429</a></td>
+                    <td>سرور اختصاصی</td>
+                    <td><span class="label label-danger">تحویل</span></td>
+                    <td>
+                      <div class="sparkbar" data-color="#f56954" data-height="20">90,-80,90,70,-61,83,63</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a href="pages/examples/invoice.html">OR7429</a></td>
+                    <td>سرور مجازی</td>
+                    <td><span class="label label-info">اقدام</span></td>
+                    <td>
+                      <div class="sparkbar" data-color="#00c0ef" data-height="20">90,80,-90,70,-61,83,63</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a href="pages/examples/invoice.html">OR1848</a></td>
+                    <td>لایسنس دارکت ادمین</td>
+                    <td><span class="label label-warning">معلق</span></td>
+                    <td>
+                      <div class="sparkbar" data-color="#f39c12" data-height="20">90,80,-90,70,61,-83,68</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a href="pages/examples/invoice.html">OR7429</a></td>
+                    <td>دامنه</td>
+                    <td><span class="label label-danger">تحویل</span></td>
+                    <td>
+                      <div class="sparkbar" data-color="#f56954" data-height="20">90,-80,90,70,-61,83,63</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a href="pages/examples/invoice.html">OR9842</a></td>
+                    <td>خدمات مانیتورینگ</td>
+                    <td><span class="label label-success">رد شدن</span></td>
+                    <td>
+                      <div class="sparkbar" data-color="#00a65a" data-height="20">90,80,90,-70,61,-83,63</div>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.table-responsive -->
+            </div>
+            <!-- /.box-body -->
+            <div class="box-footer clearfix">
+              <a href="javascript:void(0)" class="btn btn-sm btn-info btn-flat pull-left">ثبت سفارش جدید</a>
+              <a href="javascript:void(0)" class="btn btn-sm btn-default btn-flat pull-right">دیدن همه سفارش ها</a>
+            </div>
+            <!-- /.box-footer -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+
+        <div class="col-md-4">
+          <!-- Info Boxes Style 2 -->
+          <div class="info-box bg-yellow">
+            <span class="info-box-icon"><i class="ion ion-ios-pricetag-outline"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">فهرست</span>
+              <span class="info-box-number">5,200</span>
+
+              <div class="progress">
+                <div class="progress-bar" style="width: 50%"></div>
+              </div>
+                  <span class="progress-description">
+                    50٪ کاهش در 3 روز گذشته
+                  </span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+          <div class="info-box bg-green">
+            <span class="info-box-icon"><i class="ion ion-ios-heart-outline"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">یاد شده</span>
+              <span class="info-box-number">92,050</span>
+
+              <div class="progress">
+                <div class="progress-bar" style="width: 20%"></div>
+              </div>
+                  <span class="progress-description">
+                    20% کاهش در 30 روز گذشته
+                  </span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+          <div class="info-box bg-red">
+            <span class="info-box-icon"><i class="ion ion-ios-cloud-download-outline"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">دانلود ها</span>
+              <span class="info-box-number">114,381</span>
+
+              <div class="progress">
+                <div class="progress-bar" style="width: 70%"></div>
+              </div>
+                  <span class="progress-description">
+                    70٪ کاهش در 3 روز گذشته
+                  </span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+          <div class="info-box bg-aqua">
+            <span class="info-box-icon"><i class="ion-ios-chatbubble-outline"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">پیام مستقیم</span>
+              <span class="info-box-number">163,921</span>
+
+              <div class="progress">
+                <div class="progress-bar" style="width: 40%"></div>
+              </div>
+                  <span class="progress-description">
+                    40٪ کاهش در 30 روز گذشته
+                  </span>
+            </div>
+            <!-- /.info-box-content -->
+          </div>
+          <!-- /.info-box -->
+
+          <div class="box box-default">
+            <div class="box-header with-border">
+              <h3 class="box-title">مرورگر استفاده شده</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+              </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <div class="row">
+                <div class="col-md-8">
+                  <div class="chart-responsive">
+                    <canvas id="pieChart" height="150"></canvas>
+                  </div>
+                  <!-- ./chart-responsive -->
+                </div>
+                <!-- /.col -->
+                <div class="col-md-4">
+                  <ul class="chart-legend clearfix">
+                    <li><i class="fa fa-circle-o text-red"></i> کروم</li>
+                    <li><i class="fa fa-circle-o text-green"></i> اکسپلورر</li>
+                    <li><i class="fa fa-circle-o text-yellow"></i> موزیلا</li>
+                    <li><i class="fa fa-circle-o text-aqua"></i> سافاری</li>
+                    <li><i class="fa fa-circle-o text-light-blue"></i> اوپرا</li>
+                    <li><i class="fa fa-circle-o text-gray"></i> نویگیتور</li>
+                  </ul>
+                </div>
+                <!-- /.col -->
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- /.box-body -->
+            <div class="box-footer no-padding">
+              <ul class="nav nav-pills nav-stacked">
+                <li><a href="#">آمریکا
+                  <span class="pull-right text-red"><i class="fa fa-angle-down"></i> 12%</span></a></li>
+                <li><a href="#">هند <span class="pull-right text-green"><i class="fa fa-angle-up"></i> 4%</span></a>
+                </li>
+                <li><a href="#">ایران
+                  <span class="pull-right text-yellow"><i class="fa fa-angle-left"></i> 0%</span></a></li>
+              </ul>
+            </div>
+            <!-- /.footer -->
+          </div>
+          <!-- /.box -->
+
+          <!-- PRODUCT LIST -->
+          <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">محصولات جدید</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+              </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <ul class="products-list product-list-in-box">
+                <li class="item">
+                  <div class="product-img">
+                    <img src="plugins/dist/img/default-50x50.gif" alt="Product Image">
+                  </div>
+                  <div class="product-info">
+                    <a href="javascript:void(0)" class="product-title">هاست لینوکس
+                      <span class="label label-warning pull-left">$1800</span></a>
+                        <span class="product-description">
+                          هاست لینوکس با سیستم عامل لینوکس
+                        </span>
+                  </div>
+                </li>
+                <!-- /.item -->
+                <li class="item">
+                  <div class="product-img">
+                    <img src="plugins/dist/img/default-50x50.gif" alt="Product Image">
+                  </div>
+                  <div class="product-info">
+                    <a href="javascript:void(0)" class="product-title">هاست ویندوز
+                      <span class="label label-info pull-left">$700</span></a>
+                        <span class="product-description">
+                          هاست ویندوز با قابلیت اجرای پی اچ پی
+                        </span>
+                  </div>
+                </li>
+                <!-- /.item -->
+                <li class="item">
+                  <div class="product-img">
+                    <img src="plugins/dist/img/default-50x50.gif" alt="Product Image">
+                  </div>
+                  <div class="product-info">
+                    <a href="javascript:void(0)" class="product-title">لاسنس سی پنل <span class="label label-danger pull-left">$350</span></a>
+                        <span class="product-description">
+                          فروش آنی + فروش انلاین + تحویل درب منزل
+                        </span>
+                  </div>
+                </li>
+                <!-- /.item -->
+                <li class="item">
+                  <div class="product-img">
+                    <img src="plugins/dist/img/default-50x50.gif" alt="Product Image">
+                  </div>
+                  <div class="product-info">
+                    <a href="javascript:void(0)" class="product-title">کلوکیشن
+                      <span class="label label-success pull-left">$399</span></a>
+                        <span class="product-description">
+                          کلوکیشن پارس انلاین + تبیان
+                        </span>
+                  </div>
+                </li>
+                <!-- /.item -->
+              </ul>
+            </div>
+            <!-- /.box-body -->
+            <div class="box-footer text-center">
+              <a href="javascript:void(0)" class="uppercase">دیدن همه محصولات</a>
+            </div>
+            <!-- /.box-footer -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <footer class="main-footer">
+    <div class="pull-left hidden-xs">
+      <b>ورژن</b> 1.0
+    </div>
+ تمامی حقوق این اثر متعلق به شرکت <strong>رایانه پردازش تیام</strong>   میباشد و هر گونه کپی برداری پیگرد قانونی دارد
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Create the tabs -->
+    <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+      <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+      <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <!-- Home tab content -->
+      <div class="tab-pane" id="control-sidebar-home-tab">
+        <h3 class="control-sidebar-heading">فعالیت های اخیر</h3>
+        <ul class="control-sidebar-menu">
+          <li>
+            <a href="javascript:void(0)">
+              <i class="menu-icon fa fa-birthday-cake bg-red"></i>
+
+              <div class="menu-info">
+                <h4 class="control-sidebar-subheading">تولد مهرداد</h4>
+
+                <p>15 اسفند 72</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <i class="menu-icon fa fa-user bg-yellow"></i>
+
+              <div class="menu-info">
+                <h4 class="control-sidebar-subheading">خرید هاست ویندوز</h4>
+
+                <p>شماره جدید 09377846027</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <i class="menu-icon fa fa-envelope-o bg-light-blue"></i>
+
+              <div class="menu-info">
+                <h4 class="control-sidebar-subheading">تمدید سرور های اختصاصی</h4>
+
+                <p>192.168.1.1</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <i class="menu-icon fa fa-file-code-o bg-green"></i>
+
+              <div class="menu-info">
+                <h4 class="control-sidebar-subheading">آپتایم سرور ها</h4>
+
+                <p>99</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <!-- /.control-sidebar-menu -->
+
+        <h3 class="control-sidebar-heading">وصغیت کار ها</h3>
+        <ul class="control-sidebar-menu">
+          <li>
+            <a href="javascript:void(0)">
+              <h4 class="control-sidebar-subheading">
+                طرحی رابط کاربر تیام
+                <span class="label label-danger pull-right">10%</span>
+              </h4>
+
+              <div class="progress progress-xxs">
+                <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <h4 class="control-sidebar-subheading">
+                شروع تیام
+                <span class="label label-success pull-right">95%</span>
+              </h4>
+
+              <div class="progress progress-xxs">
+                <div class="progress-bar progress-bar-success" style="width: 95%"></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <h4 class="control-sidebar-subheading">
+                دوره لاراول
+                <span class="label label-warning pull-right">50%</span>
+              </h4>
+
+              <div class="progress progress-xxs">
+                <div class="progress-bar progress-bar-warning" style="width: 50%"></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <h4 class="control-sidebar-subheading">
+                آنلاین سرور
+                <span class="label label-primary pull-right">68%</span>
+              </h4>
+
+              <div class="progress progress-xxs">
+                <div class="progress-bar progress-bar-primary" style="width: 68%"></div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <!-- /.control-sidebar-menu -->
+
+      </div>
+      <!-- /.tab-pane -->
+
+      <!-- Settings tab content -->
+      <div class="tab-pane" id="control-sidebar-settings-tab">
+        <form method="post">
+          <h3 class="control-sidebar-heading">تنظیمان عمومی</h3>
+
+          <div class="form-group">
+            <label class="control-sidebar-subheading">
+              گذارش مصرف پنل
+              <input type="checkbox" class="pull-right" checked>
+            </label>
+
+            <p>
+              توضیحاتی در مورد تنظیمات عمومی
+            </p>
+          </div>
+          <!-- /.form-group -->
+
+          <div class="form-group">
+            <label class="control-sidebar-subheading">
+              باز بودن اغییر مسیر ایمیل
+              <input type="checkbox" class="pull-right" checked>
+            </label>
+
+            <p>
+              تنظیمات دیگر هم قابل دسترسی هستن
+            </p>
+          </div>
+          <!-- /.form-group -->
+
+          <div class="form-group">
+            <label class="control-sidebar-subheading">
+              لو رفتن اسم دیگرران در پست ها
+              <input type="checkbox" class="pull-right" checked>
+            </label>
+
+            <p>
+              اجازه دادن به کاربر تا اسمش رو توی پست نشون بده
+            </p>
+          </div>
+          <!-- /.form-group -->
+
+          <h3 class="control-sidebar-heading">Chat Settings</h3>
+
+          <div class="form-group">
+            <label class="control-sidebar-subheading">
+              منو به عننوان آنلاین نشون بده
+              <input type="checkbox" class="pull-right" checked>
+            </label>
+          </div>
+          <!-- /.form-group -->
+
+          <div class="form-group">
+            <label class="control-sidebar-subheading">
+              نوتیفی کیشن رو خاموش کن
+              <input type="checkbox" class="pull-right">
+            </label>
+          </div>
+          <!-- /.form-group -->
+
+          <div class="form-group">
+            <label class="control-sidebar-subheading">
+              حذف کردن تاریخچه
+              <a href="javascript:void(0)" class="text-red pull-right"><i class="fa fa-trash-o"></i></a>
+            </label>
+          </div>
+          <!-- /.form-group -->
+        </form>
+      </div>
+      <!-- /.tab-pane -->
+    </div>
+  </aside>
+  <!-- /.control-sidebar -->
+  <!-- Add the sidebar's background. This div must be placed
+       immediately after the control sidebar -->
+  <div class="control-sidebar-bg"></div>
+
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 2.2.3 -->
+<script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+<!-- FastClick -->
+<script src="plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="plugins/dist/js/app.min.js"></script>
+<!-- Sparkline -->
+<script src="plugins/sparkline/jquery.sparkline.min.js"></script>
+<!-- jvectormap -->
+<script src="plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+<!-- SlimScroll 1.3.0 -->
+<script src="plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- ChartJS 1.0.1 -->
+<script src="plugins/chartjs/Chart.min.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="plugins/dist/js/pages/dashboard2.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="plugins/dist/js/demo.js"></script>
+</body>
+</html>
